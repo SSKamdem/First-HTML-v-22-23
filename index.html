@@ -1,5 +1,14 @@
-<html style="background-color:dodgerblue">
-    <h>Learning HTML</h>
+<html style="background-color:dodgerblue"> <!-- inline CSS styling -->
+    <head>
+        <header>
+            <title>Learning HTML</title>
+        </header>
+        <style>
+            body {background-color: powderblue;}
+        </style> <!--Internal CSS styling-->
+        <link rel="stylesheet" href="styles.css"> <!--external CSS styling-->
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    </head>
     <body>
         <h1>My First HTML page</h1>
         <p>by: Sarah Kamdem</p>
@@ -7,6 +16,59 @@
         <img src="nyc.jpg" alt="New York at night because I went to New York for the long weekend"/>
         <p><b><i>I am so excited to learn website development this semester</i></b></p> 
             <!--I bolded and italicized the text-->
-        
+        <table>
+            <tr>
+                <th>TV Show Name</th>
+                <th>Genre(s)</th>
+                <th>Number of Episodes</th>
+            </tr>
+            <tr>
+                <td>How to Get Away With Murder</td>
+                <td>Legal Drama, Thriller, Mystery</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>Suits</td> <!--td is table data-->
+                <td>Legal Drama</td>
+                <td>134</td>
+            </tr>
+            <tr>
+                <td>Gossip Girl</td>
+                <td>Teen Drama</td>
+                <td>121</td>
+            </tr>
+        </table>
+        <p>My Grocery Shopping List</p>
+        <ol>
+            <li>Eggs</li>
+            <li>Yoghurt</li>
+            <li>Bread</li>
+            <li>Fruit Snacks</li>
+            <li>Chips</li>
+        </ol>
+        <form>
+            <label for="cname">Class Name:</label><br>
+            <input type="text" id="cname" name="cname"><br>
+            <label for="tname">Teacher name:</label><br>
+            <input type="text" id="tname" name="tname"><br>
+
+            <div class="dropdown">
+                <button class="dropbtn">Subject</button>
+                <div class="dropdown-content" id="dropdown1">
+                  <a>English</a>
+                  <a>History</a>
+                  <a>Foreign Languages</a>
+                  <a>Mathematics</a>
+                  <a>Science</a>
+                  <a>CS</a>
+                </div>
+            </div>
+        </form>
+
+        <button class="alertbtn" onclick=alert(Date())>Alert Button</button>
+        <audio controls>
+            <source src="TooManyNights.mp3" type="audio/mp3">
+        </audio>
+
     </body>
 </html>
